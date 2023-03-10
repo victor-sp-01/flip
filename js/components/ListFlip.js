@@ -19,6 +19,7 @@ const ListFlip =()=>{
                 ${ number.map( data =>{
                     return(`
                         <button class="button__ylcX0 KlaXcimGO0T1BqC" data-id="${ data }" >
+                            <img src="./img/others/cuadrado.png" class="img__XFPnv" alt="">
                             <div class="div__p8D1J back" ><img class="img_cm9CU" class="img__QL62c" src="./img/icons/anonimo.png" alt=""></div>
                             <div class="div__p8D1J front" > <img class="img__FD8kE" src="./img/flip/${ data }.jpg" alt=""></div>
                         </button> 
