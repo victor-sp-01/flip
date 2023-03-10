@@ -55,6 +55,8 @@ i{ pointer-events: none; }
 /* flip */ 
 .div__yvOy0{ 
     display: grid;
+    margin: auto;
+    width: min( 100%, 850px );
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; padding: 20px; padding-top: 0;
 }
@@ -99,9 +101,8 @@ i{ pointer-events: none; }
     width: auto;
     height: auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }   .div__3YkoM.start::after{ content: ''; position: fixed; inset: 0; }
     .div__3YkoM.active .button__ylcX0 .div__p8D1J.back{ transform: rotatey(-180deg) } 
@@ -114,8 +115,8 @@ i{ pointer-events: none; }
     outline: none;
     border-radius: 5px;
 
-    width: 80px;
-    height: 50px;
+    width: 300px;
+    height: 200px;
 
     cursor: pointer;
 
