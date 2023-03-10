@@ -41,7 +41,10 @@ const Flip =()=>{
             ${ numbers.map( data =>{ 
                 return (`
                 <a href="#flip/${ data }" class="a__NiKcb ${ +nivel >= +data ? '' : 'block' }" ><img src="./img/others/cuadrado.png" alt=""><span class="span__hDxJP" >${ data }</span></a> 
- 
+                ${ data % 5 === 0 ? `<a href="#photo/${ data }" class="a__NiKcb ${ +nivel > +data ? '' : 'block' }" >
+                    <img src="./img/others/cuadrado.png" alt="">
+                    <img src="./img/five/${ +data }.jpg" alt="" class="img__oVcjv" >
+                </a>` : '' }
                 `)
             } ).join('') }
         `
@@ -133,7 +136,4 @@ const Flip =()=>{
 export default Flip
 
 
-/*${ data % 5 === 0 ? `<a href="#photo/${ data }" class="a__NiKcb ${ +nivel > +data ? '' : 'block' }" >
-                    <img src="./img/others/cuadrado.png" alt="">
-                    <img src="./img/five/${ +data }.jpg" alt="" class="img__oVcjv" >
-                </a>` : '' }*/
+/**/
