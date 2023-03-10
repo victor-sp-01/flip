@@ -115,9 +115,6 @@ i{ pointer-events: none; }
     outline: none;
     border-radius: 5px;
 
-    width: 300px;
-    height: 200px;
-
     cursor: pointer;
 
     perspective: 1000px;    
