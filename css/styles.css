@@ -98,7 +98,7 @@ i{ pointer-events: none; }
 .div__3YkoM{
     margin: auto;
 
-    width: auto;
+    width: min( 100%, 850px );
     height: auto;
 
     display: grid;
@@ -113,10 +113,10 @@ i{ pointer-events: none; }
     background: none;
     border: none;
     outline: none;
-    border-radius: 5px;
-
+    border-radius: 5px; 
+ 
     cursor: pointer;
-
+ 
     perspective: 1000px;    
     transform-style: preserve-3d;
 }   .button__ylcX0.active .div__p8D1J.back, .button__ylcX0.finish .div__p8D1J.back{ transform: rotatey(-180deg) } 
@@ -158,6 +158,10 @@ i{ pointer-events: none; }
     object-fit: cover;
 }
 
+.img__XFPnv{
+    opacity: 0;
+    width: 100%;
+}
 
 
 
