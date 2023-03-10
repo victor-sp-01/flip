@@ -102,7 +102,8 @@ const Flip =()=>{
                     for ( const flip of flips ) (flip.classList.remove( 'active' ), flip.classList.add( 'finish' ))
                     Game.level--
                     if( Game.level === 0 ) {
-                        localStorage.setItem( 'level', `${ +nivel + 1 }` )
+                        if( endParam === localStorage.getItem( 'level' ) )
+                             localStorage.setItem( 'level', `${ +nivel + 1 }` )
                         OpcWin()
                     }
                     return
